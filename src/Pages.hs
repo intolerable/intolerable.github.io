@@ -34,10 +34,11 @@ indexHandler = pure do
     head_ do
       title_ "intolerable.github.io"
       link_ [rel_ "stylesheet", linkAbsHref_ styleLink]
+      meta_ [name_ "viewport", content_ "width=device-width; initial-scale=1;"]
     body_ do
       main_ do
         h1_ [id_ "title"] "intolerable"
-        h2_ [id_ "name"] "Fraser Murray"
+        h2_ [id_ "name"] "fraser murray"
         h3_ [id_ "email"] "fraser (dot) m (dot) murray (at) gmail (dot) com"
         div_ [id_ "links"] do
           div_ [id_ "github"] do
