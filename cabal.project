@@ -1,0 +1,11 @@
+with-compiler: ghc-9.2.4
+
+packages: .
+
+jobs: $ncpus
+optimization: False
+
+source-repository-package
+  type: git
+  location: https://github.com/intolerable/servant-lucid2.git
+  tag: 5913d65c051c881576ef69826da30c0b6c486782

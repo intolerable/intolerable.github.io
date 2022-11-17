@@ -1,0 +1,38 @@
+name: intolerable-github-io
+version: 0.1.0.0
+
+author: Fraser Murray
+maintainer: fraser.m.murray@gmail.com
+
+license: NONE
+
+language: GHC2021
+
+default-extensions:
+  - AllowAmbiguousTypes
+  - BlockArguments
+  - DataKinds
+  - LambdaCase
+  - OverloadedStrings
+  - TypeFamilies
+
+extra-source-files:
+  - resources/styles/**.sass
+
+dependencies:
+  - base
+  - bytestring
+  - containers
+  - directory
+  - filepath
+  - http-media
+  - servant
+  - servant-server
+  - lucid2
+  - servant-lucid2
+  - hsass
+  - text
+  - warp
+
+library:
+  source-dirs: src

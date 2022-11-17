@@ -1,0 +1,49 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.35.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           intolerable-github-io
+version:        0.1.0.0
+author:         Fraser Murray
+maintainer:     fraser.m.murray@gmail.com
+license:        NONE
+build-type:     Simple
+extra-source-files:
+    resources/styles/main.sass
+
+library
+  exposed-modules:
+      Pages
+      Pages.CSS
+      Pages.Layout
+      Pages.View
+  other-modules:
+      Paths_intolerable_github_io
+  autogen-modules:
+      Paths_intolerable_github_io
+  hs-source-dirs:
+      src
+  default-extensions:
+      AllowAmbiguousTypes
+      BlockArguments
+      DataKinds
+      LambdaCase
+      OverloadedStrings
+      TypeFamilies
+  build-depends:
+      base
+    , bytestring
+    , containers
+    , directory
+    , filepath
+    , hsass
+    , http-media
+    , lucid2
+    , servant
+    , servant-lucid2
+    , servant-server
+    , text
+    , warp
+  default-language: GHC2021
